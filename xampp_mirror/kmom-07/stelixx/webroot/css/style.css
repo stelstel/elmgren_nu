@@ -1,0 +1,86 @@
+/**
+ * General elements
+ */
+body {
+  color: #333;
+  font-family: arial, sans-serif;
+	background-image:url(../img/silly_walk_black.gif);
+}
+
+.centeredImage{
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding:0px;
+}
+
+.centeredLink{
+	text-align:center;	
+}
+
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+  margin: 0 auto;
+  width: 980px; 
+  padding: 10px;
+	background-color:#68cabd;
+	border:medium;
+	border-color:#000;
+	border-style:solid;
+}
+
+
+/**
+ * Layout for header
+ */
+#header {
+	height:185px;
+  position: relative;
+  margin-bottom: 40px;
+	background-color:#DDD;
+}
+
+.sitetitle {
+  position: absolute;
+  top: 70px;
+  left: 200px;
+  font-size: 48px;
+}
+
+.siteslogan {
+  position: absolute;
+	top: 120px;
+  left: 210px;
+  font-style: italic;
+  color: #555;
+}
+
+.sitelogo {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+
+/**
+ * Layout for main
+ */
+#main {
+  min-height: 20em;
+}
+
+
+/**
+ * Layout for footer
+ */
+#footer {
+	margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.sitefooter {
+	color: #666;	
+}

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+/* Stylesheet for table with class=film_tbl */
+
+table.film_tbl th {
+	background-color: #FFF;
+}
+
+
+table.film_tbl td {
+	background-color: #666;
+}

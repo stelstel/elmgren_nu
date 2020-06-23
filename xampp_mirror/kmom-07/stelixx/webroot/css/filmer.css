@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+/* Stylesheet for filmer.php */
+
+#header {
+	height:225px; /* Higher header to fit film search*/
+}
+
+table.film_tbl th {
+	background-color: #FFF;
+}
+
+
+table.film_tbl td {
+	background-color: #b7e8ea;
+}

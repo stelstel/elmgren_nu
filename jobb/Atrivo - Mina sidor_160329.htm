@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="sv"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+    <meta name=" viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Atrivo - Mina sidor</title>
+
+    <link href="Atrivo%20-%20Mina%20sidor_160329-filer/css_002.css" rel="stylesheet" type="text/css">
+
+    <link href="Atrivo%20-%20Mina%20sidor_160329-filer/css.css" rel="stylesheet">
+
+    <script src="Atrivo%20-%20Mina%20sidor_160329-filer/all.js" id="facebook-jssdk"></script><script src="Atrivo%20-%20Mina%20sidor_160329-filer/ga.js" async="" type="text/javascript"></script><script src="Atrivo%20-%20Mina%20sidor_160329-filer/jquery"></script>
+
+    <script src="Atrivo%20-%20Mina%20sidor_160329-filer/jqueryval"></script>
+
+        
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            /* Prevent submit on enter */
+            $("form:not([data-enterEnabled='true']").on("keyup keypress", function (e) {
+                var code = e.keyCode || e.which;
+                if (code == 13) {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+
+            /* Prevent doouble click on submit buttons */
+            $("input[type='submit']").on("click", preventDoubleClick1);
+        });
+
+        function preventDoubleClick1() {
+            /* $(this).attr('disabled', 'disabled'); Not for Chrome
+             return true; */
+            var self = $(this);
+
+            if (!self.hasClass('processing')) {
+                self.addClass('processing');
+                self.css('opacity', '0.5');
+                self.css('padding', '2px 5px 1px 5px');
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        function preventDoubleClick2(form) {
+            var self = $(this);
+
+            if (!self.hasClass('processing')) {
+                form.submit();
+                self.addClass('processing');
+                self.css('opacity', '0.5');
+                self.css('padding', '2px 5px 1px 5px');
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+
+    <!-- Spårningskod för Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36590853-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+<script src="Atrivo%20-%20Mina%20sidor_160329-filer/secureAnonymousFramework"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body>
+    <div id="container">
+        <div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="Atrivo%20-%20Mina%20sidor_160329-filer/xd_arbiter.htm" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="Atrivo%20-%20Mina%20sidor_160329-filer/ping.htm" style="display: none;" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f3e58e729dea1b6" frameborder="0"></iframe></div></div></div>
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/sv_SE/all.js#xfbml=1&appId=182228091928224";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div class="bg-header">
+            
+<header class="header clear">
+    <div class="container">
+        <div class="row">
+            <div class="xs-col-span-8 lg-col-span-5">
+                <a href="http://www.atrivo.se/">
+                    <img src="Atrivo%20-%20Mina%20sidor_160329-filer/ATRIVO_logo.png" alt="Atrivo">
+                </a>
+            </div>
+            <div class="xs-col-span-4 lg-col-span-7">
+                <section class="text-right right">
+                    <span class="xs-hide sm-hide header-date clear">tisdag den 29 mars 2016</span>
+                    <span class="xs-hide sm-hide header-follow-us atr-blue clear">Följ oss på Facebook och LinkedIn</span>
+                    <div>
+                        <div class="header-facebook left">
+                            <iframe src="Atrivo%20-%20Mina%20sidor_160329-filer/like.htm" scrolling="no" style="border:none; overflow:hidden; width:85px; height:21px;" allowtransparency="true" frameborder="0"></iframe>
+                        </div>
+                        <div class="xs-hide sm-hide header-linkedIn left">
+                            <script src="Atrivo%20-%20Mina%20sidor_160329-filer/in.js" type="text/javascript"></script>
+                            <span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block;"><span style="padding: 0px ! important; margin: 0px ! important; text-indent: 0px ! important; display: inline-block ! important; vertical-align: baseline ! important; font-size: 1px ! important;"><iframe src="https://platform.linkedin.com/js/xdrpc.html?v=0.0.2000-RC8.55042-1429#xdm_e=https%3A%2F%2Fapplicant.atrivo.se&amp;xdm_c=li_gen_1459274154982_0&amp;xdm_p=1#target=li_gen_1459274154982_0&amp;width=600&amp;height=400&amp;mode=wrapper" style="width: 111px; height: 20px; display: inline-block;" id="easyXDM_IN_Lib_li_gen_1459274154982_0_provider" name="easyXDM_IN_Lib_li_gen_1459274154982_0_provider" frameborder="0"></iframe></span></span><script type="IN/FollowCompany+init" data-counter="right" data-id="1842882">
+                            </script>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="bg-main-menu">
+    <nav class="main-menu">
+        <ul class="main-menu relative">
+                    <li class="main-menu-item">
+                        <a href="http://www.atrivo.se/home.aspx">Hem</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="http://www.atrivo.se/about-us/about-atrivo.aspx">Om oss</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="http://www.atrivo.se/offer/our-offer.aspx">Vårt erbjudande</a>
+                    </li>
+                    <li class="main-menu-selected-item">
+                        <a href="http://www.atrivo.se/career/work-at-atrivo.aspx">Jobba på Atrivo</a>
+                    </li>
+                    <li class="main-menu-item xs-hide sm-hide">
+                        <a href="http://www.atrivo.se/newsroot/majornews.aspx">Aktuellt</a>
+                    </li>
+                    <li class="main-menu-item xs-hide sm-hide">
+                        <a href="http://www.atrivo.se/customers.aspx">Våra kunder</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="http://www.atrivo.se/contact.aspx">Kontakt</a>
+                    </li>
+            <li class="main-menu-item main-menu-item-all pointer absolute" onclick="$('[data-toggle-my-pages-menu]').hide(); $('[data-toggle-menu]').toggle();">
+                <span>Meny <img src="Atrivo%20-%20Mina%20sidor_160329-filer/menu-white.png"></span>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="site-wrapper none" data-toggle-menu="">
+        <div class="relative">
+            <div class="third menu absolute">
+                <nav class="">
+            <div>
+                <h3>
+                        <a href="http://www.atrivo.se/home.aspx">Hem</a>
+                </h3>
+                <ul>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                        <a href="http://www.atrivo.se/about-us/about-atrivo.aspx">Om oss</a>
+                </h3>
+                <ul>
+                        <li>
+                                <a href="http://www.atrivo.se/about-us/about-atrivo.aspx">Om Atrivo</a>
+                        </li>
+                        <li>
+                                <a href="http://www.atrivo.se/about-us/management.aspx">Ledning</a>
+                        </li>
+                        <li>
+                                <a href="http://www.atrivo.se/about-us/consultants.aspx">Konsulter i fokus</a>
+                        </li>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                        <a href="http://www.atrivo.se/offer/our-offer.aspx">Vårt erbjudande</a>
+                </h3>
+                <ul>
+                        <li>
+                                <a href="http://www.atrivo.se/offer/our-offer.aspx">Vårt erbjudande</a>
+                        </li>
+                        <li>
+                                <a href="http://www.atrivo.se/offer/support.aspx">Support</a>
+                        </li>
+                        <li>
+                                <a href="http://www.atrivo.se/offer/infrastructure.aspx">Infrastruktur</a>
+                        </li>
+                        <li>
+                                <a href="http://www.atrivo.se/offer/management-offer.aspx">Ledning och styrning</a>
+                        </li>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                        <a href="http://www.atrivo.se/career/work-at-atrivo.aspx">Jobba på Atrivo</a>
+                </h3>
+                <ul>
+                        <li>
+                                <a href="http://www.atrivo.se/career/work-at-atrivo.aspx">Jobba på Atrivo</a>
+                        </li>
+                        <li>
+                                <a href="http://www.atrivo.se/career/vacancies.aspx">Lediga tjänster</a>
+                        </li>
+                        <li>
+<a href="https://applicant.atrivo.se/Account/Login">Mina sidor</a>                        </li>
+                        <li>
+<a href="https://applicant.atrivo.se/Account/Create">Skapa konto</a>                        </li>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                        <a href="http://www.atrivo.se/newsroot/majornews.aspx">Aktuellt</a>
+                </h3>
+                <ul>
+                        <li>
+                                <a href="http://www.atrivo.se/newsroot/majornews.aspx">Nyheter</a>
+                        </li>
+                        <li>
+                                <a href="http://www.atrivo.se/newsroot/blog.aspx">Atrivoblogg</a>
+                        </li>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                        <a href="http://www.atrivo.se/customers.aspx">Våra kunder</a>
+                </h3>
+                <ul>
+                </ul>
+            </div>
+            <div>
+                <h3>
+                        <a href="http://www.atrivo.se/contact.aspx">Kontakt</a>
+                </h3>
+                <ul>
+                </ul>
+            </div>
+</nav>
+
+
+
+
+            </div>
+        </div>
+</div>
+
+
+
+
+<div class="header">
+        <div class="text-right">
+            <nav class="sm-hide md-hide lg-hide left header-my-pages pointer">
+                    <span class="atr-orange" onclick="$('[data-toggle-menu]').hide(); $('[data-toggle-my-pages-menu]').toggle();">Mina sidor <img src="Atrivo%20-%20Mina%20sidor_160329-filer/menu-orange.png"></span>
+            </nav>
+            <div class="account-status">
+                <div>
+        <div class="sm-hide md-hide lg-hide atr-gray text-right">Stefan Elmgren</div>
+        <span class="xs-hide atr-gray">Stefan Elmgren</span>
+<a class="atr-lnk atr-orange" href="https://applicant.atrivo.se/Account/LogOff">Logga ut</a></div>
+
+            </div>
+        </div>
+</div>
+
+<div class="header relative">
+    <div class="container">
+        <div class="xs-full sm-hide md-hide lg-hide text-left my-pages-menu absolute none" data-toggle-my-pages-menu="">
+                <nav>
+        <ul>
+                <li>
+<a class="my-pages-menu-item-selected" href="https://applicant.atrivo.se/AppliedJobs/List">Sökta tjänster</a>                </li>
+                <li>
+<a class="my-pages-menu-item" href="https://applicant.atrivo.se/Vacancies/List">Lediga tjänster</a>                </li>
+                <li>
+<a class="my-pages-menu-item" href="https://applicant.atrivo.se/AccountInfo">Kontouppgifter</a>                </li>
+                <li>
+<a class="my-pages-menu-item" href="https://applicant.atrivo.se/PersonInfo">Grunduppgifter</a>                </li>
+                <li>
+<a class="my-pages-menu-item" href="https://applicant.atrivo.se/Image">Bild</a>                </li>
+                <li>
+<a class="my-pages-menu-item" href="https://applicant.atrivo.se/CVsAndPersonalLetters">Personliga brev &amp; CVn</a>                </li>
+                <li>
+<a class="my-pages-menu-item" href="https://applicant.atrivo.se/OtherDocuments">Övriga dokument</a>                </li>
+                <li>
+<a class="my-pages-menu-item" href="https://applicant.atrivo.se/Account/LogOff">Logga ut</a>                </li>
+        </ul>
+    </nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+        </div>
+        <div class="bg-site bg-image">
+            <div class="site-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="xs-hide sub-menu-and-left-section left">
+                            <div class="card-border-blue shadow padding_5px">
+                                <ul class="sub-menu">
+        <li>
+<a class="subMenuItemSelected" href="https://applicant.atrivo.se/AppliedJobs/List">Sökta tjänster</a>        </li>
+        <li>
+<a class="subMenuItem" href="https://applicant.atrivo.se/Vacancies/List">Lediga tjänster</a>        </li>
+        <li>
+<a class="subMenuItem" href="https://applicant.atrivo.se/AccountInfo">Kontouppgifter</a>        </li>
+        <li>
+<a class="subMenuItem" href="https://applicant.atrivo.se/PersonInfo">Grunduppgifter</a>        </li>
+        <li>
+<a class="subMenuItem" href="https://applicant.atrivo.se/Image">Bild</a>        </li>
+        <li>
+<a class="subMenuItem" href="https://applicant.atrivo.se/CVsAndPersonalLetters">Personliga brev &amp; CVn</a>        </li>
+        <li>
+<a class="subMenuItem" href="https://applicant.atrivo.se/OtherDocuments">Övriga dokument</a>        </li>
+        <li>
+<a class="subMenuItem" href="https://applicant.atrivo.se/Account/LogOff">Logga ut</a>        </li>
+</ul>
+
+
+                            </div>
+                            <div class="xs-hide md-hide lg-hide">
+                                
+        <a class="atr-orange-lnk-box" href="https://applicant.atrivo.se/CVsandPersonalLetters" target="_self"><span>Uppdatera ditt CV här</span><div><img src="Atrivo%20-%20Mina%20sidor_160329-filer/continue_white.png"></div></a><a class="atr-orange-lnk-box" href="https://www.facebook.com/atrivo.se" target="_blank"><span>Atrivo på Facebook</span><div><img src="Atrivo%20-%20Mina%20sidor_160329-filer/continue_white.png"></div></a>
+        <a class="atr-blue-borderd-lnk-img shadow"><img alt="Atrivo" src="Atrivo%20-%20Mina%20sidor_160329-filer/Applications%25201.jpg"></a>
+    
+                            </div>
+                        </div>
+                        <div class="center-and-right-section left">
+                            <div class="row">
+                                <div class="xs-col-span-12 sm-col-span-12 md-col-span-9">
+                                    <div class="card-border-blue card-padding shadow">
+                                        
+
+<main class="container">
+
+    
+
+    <h1 class="atr-blue">Sökta tjänster</h1>
+
+    
+
+            <div class="sm-hide md-hide lg-hide">
+                <nav class="mobile-item-nav"><span class="left item-nav-span">Föreg.</span><a class="item-nav-link" href="https://applicant.atrivo.se/AppliedJobs/List/1" target="_top">Lista</a><a class="right item-nav-link" href="https://applicant.atrivo.se/AppliedJobs/Show/12222" target="_top">Nästa</a></nav>
+             </div>
+            <div class="xs-hide">
+                <nav class="item-nav"><span class="left item-nav-span">Föregående</span><a class="item-nav-link" href="https://applicant.atrivo.se/AppliedJobs/List/1" target="_top">Tillbaka till listan</a><a class="right item-nav-link" href="https://applicant.atrivo.se/AppliedJobs/Show/12222" target="_top">Nästa</a></nav>
+            </div>
+                <br>
+                <span class="job-date">
+                    2016-03-10
+                </span>
+                <br>
+                <br>
+                <h2 class="job-title atr-blue">
+                    Supportspecialist
+                </h2>
+<p class="job"><span class=""></span><br>Vår kund behöver förstärka sitt supportteam ytterligare med en teknisk och hjälpsam supportspecialist.</p><p class="job"><span class=""></span><br>OM KUNDEN
+
+Vår kund är väletablerad inom sin bransch, finns i hela Norden och sysselsätter 2000 heltidsanställda. Vår kund bedriver ett aktivt utvecklingsarbete och lanserar hela tiden ny teknik och nya produkter inom sin bransch. Ett tydligt mål är att förbättra människors hälsa och livskvalitet och man vill erbjuda en arbetsplats där medarbetarna utvecklas, känner arbetsglädje och mår bra.
+
+ARBETSUPPGIFTER
+
+I arbetsuppgifterna ingår att ge support gällande IT-relaterade frågor. Det handlar bland annat om att hjälpa till med system, utrustning, behörigheter och beställningar. För att klara arbetsuppgifterna behöver du tala och skriva obehindrat på svenska och engelska. Det är en fördel om du har lätt för att lära dig nya saker och tycker om att hjälpa andra människor.
+
+Du kommer att ingå i ett team som arbetar med support och placeringen är i Solna.
+
+ERFARENHET/KOMPETENS
+
+Erfarenhet från arbete i någon IT-support är ett krav, minst 1 år. Du har erfarenhet och kunskaper i Active Directory, ITIL, Windows XP, Windows 7, Microsoft Office 2010. 
+
+PERSONLIGA EGENSKAPER
+
+Du är positiv, driftig och brinner för att hjälpa till. I rollen som konsult är det viktigt att du är social och gillar kontakten med olika typer av människor. 
+
+START
+
+Så snart som möjligt, enligt överenskommelse.
+
+ATRIVO
+
+Atrivo har sedan starten 2003 fokuserat på att leverera erfaren kompetens inom området IT-infrastruktur. Vår ambition är att vara Stockholms vassaste leverantör av supportspecialister, drifttekniker, tekniska projektledare samt olika typer av linjeroller. 
+
+Som anställd hos Atrivo finns det stora möjligheter till utveckling. Vi arbetar med stora välkända företag och erbjuder löpande utbildning. Du blir en del av ett kompetent företag med goda framtidsutsikter. 
+
+Vill du jobba med IT är det hos Atrivo du vill vara.
+
+Välkommen med din ansökan!
+</p><p class="vacancy"><span class="atr-darkGray">Omfattning / Varaktighet</span><br>Heltid/tillsvidare</p><p class="job"><span class="atr-darkGray">Placering</span><br>Stockholm</p><p class="job"><span class="atr-darkGray">Start</span><br>Enligt överenskommelse, intervjuer sker löpande.</p><p class="job"><span class="atr-darkGray">Kontaktperson</span><br>Måns Kjäll 070 222 21 26, Anna Schager 070 830 43 75</p>            <div class="sm-hide md-hide lg-hide">
+                <nav class="mobile-item-nav"><span class="left item-nav-span">Föreg.</span><a class="item-nav-link" href="https://applicant.atrivo.se/AppliedJobs/List/1" target="_top">Lista</a><a class="right item-nav-link" href="https://applicant.atrivo.se/AppliedJobs/Show/12222" target="_top">Nästa</a></nav>
+            </div>
+            <div class="xs-hide">
+                <nav class="item-nav"><span class="left item-nav-span">Föregående</span><a class="item-nav-link" href="https://applicant.atrivo.se/AppliedJobs/List/1" target="_top">Tillbaka till listan</a><a class="right item-nav-link" href="https://applicant.atrivo.se/AppliedJobs/Show/12222" target="_top">Nästa</a></nav>
+            </div>
+</main>
+
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class="xs-col-span-12 sm-hide md-col-span-3">
+                                    
+        <a class="atr-blue-borderd-lnk-img shadow"><img alt="Atrivo" src="Atrivo%20-%20Mina%20sidor_160329-filer/Applications%25201.jpg"></a>
+        <a class="atr-orange-lnk-box" href="https://applicant.atrivo.se/CVsandPersonalLetters" target="_self"><span>Uppdatera ditt CV här</span><div><img src="Atrivo%20-%20Mina%20sidor_160329-filer/continue_white.png"></div></a><a class="atr-orange-lnk-box" href="https://www.facebook.com/atrivo.se" target="_blank"><span>Atrivo på Facebook</span><div><img src="Atrivo%20-%20Mina%20sidor_160329-filer/continue_white.png"></div></a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="xs-hide sm-col-span-12">
+                            <img alt="Atrivo" class="bottom-img shadow" src="Atrivo%20-%20Mina%20sidor_160329-filer/people-b.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-footer">
+            
+<footer>
+    <section class="copy-right text-center">
+        © 2016 ATRIVO AB All rights reserved
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="xs-hide sm-col-span-12 md-col-span-11">
+                    <nav class="site-map">
+                            <div class="block left">
+                                <h3>
+<a href="https://applicant.atrivo.se/AppliedJobs/List">Mina sidor</a>                                </h3>
+                                <ul>
+                                        <li>
+<a href="https://applicant.atrivo.se/AppliedJobs/List">Sökta tjänster</a>                                        </li>
+                                        <li>
+<a href="https://applicant.atrivo.se/Vacancies/List">Lediga tjänster</a>                                        </li>
+                                        <li>
+<a href="https://applicant.atrivo.se/AccountInfo">Kontouppgifter</a>                                        </li>
+                                        <li>
+<a href="https://applicant.atrivo.se/PersonInfo">Grunduppgifter</a>                                        </li>
+                                        <li>
+<a href="https://applicant.atrivo.se/Image">Bild</a>                                        </li>
+                                        <li>
+<a href="https://applicant.atrivo.se/CVsAndPersonalLetters">Personliga brev &amp; CVn</a>                                        </li>
+                                        <li>
+<a href="https://applicant.atrivo.se/OtherDocuments">Övriga dokument</a>                                        </li>
+                                        <li>
+<a href="https://applicant.atrivo.se/Account/LogOff">Logga ut</a>                                        </li>
+                                </ul>
+                            </div>
+                            <div class="block left">
+                                <h3>
+                                        <a href="http://www.atrivo.se/home.aspx">Hem</a>
+                                </h3>
+                                <ul>
+                                </ul>
+                            </div>
+                            <div class="block left">
+                                <h3>
+                                        <a href="http://www.atrivo.se/about-us/about-atrivo.aspx">Om oss</a>
+                                </h3>
+                                <ul>
+                                        <li>
+                                                <a href="http://www.atrivo.se/about-us/about-atrivo.aspx">Om Atrivo</a>
+                                        </li>
+                                        <li>
+                                                <a href="http://www.atrivo.se/about-us/management.aspx">Ledning</a>
+                                        </li>
+                                        <li>
+                                                <a href="http://www.atrivo.se/about-us/consultants.aspx">Konsulter i fokus</a>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class="block left">
+                                <h3>
+                                        <a href="http://www.atrivo.se/offer/our-offer.aspx">Vårt erbjudande</a>
+                                </h3>
+                                <ul>
+                                        <li>
+                                                <a href="http://www.atrivo.se/offer/our-offer.aspx">Vårt erbjudande</a>
+                                        </li>
+                                        <li>
+                                                <a href="http://www.atrivo.se/offer/support.aspx">Support</a>
+                                        </li>
+                                        <li>
+                                                <a href="http://www.atrivo.se/offer/infrastructure.aspx">Infrastruktur</a>
+                                        </li>
+                                        <li>
+                                                <a href="http://www.atrivo.se/offer/management-offer.aspx">Ledning och styrning</a>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class="block left">
+                                <h3>
+                                        <a href="http://www.atrivo.se/career/work-at-atrivo.aspx">Jobba på Atrivo</a>
+                                </h3>
+                                <ul>
+                                        <li>
+                                                <a href="http://www.atrivo.se/career/work-at-atrivo.aspx">Jobba på Atrivo</a>
+                                        </li>
+                                        <li>
+                                                <a href="http://www.atrivo.se/career/vacancies.aspx">Lediga tjänster</a>
+                                        </li>
+                                        <li>
+<a href="https://applicant.atrivo.se/Account/Login">Mina sidor</a>                                        </li>
+                                        <li>
+<a href="https://applicant.atrivo.se/Account/Create">Skapa konto</a>                                        </li>
+                                </ul>
+                            </div>
+                            <div class="block left">
+                                <h3>
+                                        <a href="http://www.atrivo.se/newsroot/majornews.aspx">Aktuellt</a>
+                                </h3>
+                                <ul>
+                                        <li>
+                                                <a href="http://www.atrivo.se/newsroot/majornews.aspx">Nyheter</a>
+                                        </li>
+                                        <li>
+                                                <a href="http://www.atrivo.se/newsroot/blog.aspx">Atrivoblogg</a>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class="block left">
+                                <h3>
+                                        <a href="http://www.atrivo.se/customers.aspx">Våra kunder</a>
+                                </h3>
+                                <ul>
+                                </ul>
+                            </div>
+                            <div class="block left">
+                                <h3>
+                                        <a href="http://www.atrivo.se/contact.aspx">Kontakt</a>
+                                </h3>
+                                <ul>
+                                </ul>
+                            </div>
+                    </nav>
+                </div>
+                <div class="xs-hide sm-hide md-col-span-1">
+                    <section class="text-right">
+                        <a class="atr-lnk" href="http://www.facebook.com/#%21/pages/Atrivo/110611218952507" target="_blank">
+                            <img alt="Facebook" src="Atrivo%20-%20Mina%20sidor_160329-filer/f.png">
+                        </a>
+                        <a class="atr-lnk" href="http://www.linkedin.com/company/1842882?trk=cws-btn-overview-0-0" target="_blank">
+                            <img alt="LinkedIn" src="Atrivo%20-%20Mina%20sidor_160329-filer/in.png">
+                        </a>
+                    </section>
+                    <section class="xs-hide sm-hide right">
+                        <a class="atr-lnk atr-gray text-nowrap" target="_blank" href="http://kartor.eniro.se/m/a5171">Hitta till Atrivo</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="xs-col-span-12 footer-bottom relative">
+                <div class="xs-hide footer-bottom-policy inline-block">
+                    <a class="atr-lnk atr-gray" href="http://www.atrivo.se/termsandprivacypolicy.aspx">Terms and Privacy Policy</a>
+                </div>
+                <div class="footer-bottom-contact inline-block text-center">
+                    <address class="sm-hide md-hide lg-hide">Atrivo AB | Svärdvägen 21, 182 33 Danderyd | 08-7530020</address>
+                    <address class="xs-hide">Atrivo AB | Box 570, 182 15 Danderyd | 08-7530020</address>
+                </div>
+                <section class="md-hide lg-hide footer-bottom-fb-in inline-block right absolute">
+                    <a class="atr-lnk" href="http://www.facebook.com/#%21/pages/Atrivo/110611218952507" target="_blank">
+                        <img alt="Facebook" src="Atrivo%20-%20Mina%20sidor_160329-filer/f.png">
+                    </a>
+                    <a class="atr-lnk" href="http://www.linkedin.com/company/1842882?trk=cws-btn-overview-0-0" target="_blank">
+                        <img alt="LinkedIn" src="Atrivo%20-%20Mina%20sidor_160329-filer/in.png">
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+    </div>
+
+</body></html>

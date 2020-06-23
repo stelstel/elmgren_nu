@@ -1,0 +1,56 @@
+/* parallex.css */
+/* Jake Lundberg, https://codepen.io/iamtheWraith/ */
+
+/* Effect for top image */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: url(http://elmgren.nu/public/images/table_vietnam_1920.jpg) no-repeat 50% 0% fixed;
+  background-size: 100%;
+  overflow: hidden;
+  height: 40vh;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 27vh;
+  left: 0;
+  width: 100%;
+  padding: .3em;
+  color: #000000;
+  font-weight: bold;
+  font-size: 4rem; 
+  font-size: 10vw;
+  text-shadow: 0 0px 10px #ccc;
+}
+
+@media (min-width: 552px) {
+  .hero h1{
+    top: 8vh;  
+  }
+
+  .hero{
+    height: 47vh;  
+  }
+}
+
+@media (min-width: 1215px) {
+  .hero h1{
+    top: 24vh;  
+  }
+
+  .hero{
+    height: 62vh;  
+  }
+}

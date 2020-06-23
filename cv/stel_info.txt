@@ -1,0 +1,24 @@
+Set debug to true in config/app.php when you're developing so you can see what error you get instead of Whoops, an error....
+
+
+Change logout direction:
+vendor\laravel\framework\src\Illuminate\Foundation\Auth\AuthenticatesUsers.php:
+  149       * @return \Illuminate\Http\Response
+  150       */
+  151:     public function logout(Request $request)
+  152      {
+  153          $this->guard()->logout();
+
+
+ Try running 
+  	php artisan config:clear
+  and 
+  	php artisan cache:clear 
+  and try again
+
+  View Composer
+  1. Gör en composer och lägg den i mappen (som kan behöva skapas) App/Http/ViewComposers
+
+  2. Gör en serviceprovider som läggs i mappen app/Providers 
+
+  3. Remember, if you create a new service provider to contain your view composer registrations, you will need to add the service provider to the providers array in the  config/app.php configuration file.

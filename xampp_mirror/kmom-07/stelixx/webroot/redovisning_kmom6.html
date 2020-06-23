@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1>Redovisning KMOM6</h1>
+<p>Jag började med att göra CImage klassen. Jag delade upp koden i ett antal funktioner och gjorde en konstruktor.</p>
+<p>Testade sedan klassen med ett anrop från en simpel version av pagecontrollern img.php. Fick ett antal errors som mest berodde på glömt &quot;this-&gt;&quot;.</p>
+<p>Sedan fick jag dock ett värre problem då jag fick &quot;errorMessage('Security constraint: Source image is not directly below the directory IMG_PATH.');&quot; men efter ett litet tag så lyckades jag lösa detta.</p>
+<p>Efter lång tid av this-&gt;-adderande så lyckades jag till slut visa en bild på sidan img.php. Det blev hela sidan. Bara bilden, inget annat. Det var ändå väldigt skönt att göra framsteg. Nu försökte jag komma på hur jag skulle kunna visa bilden som en del av sidan. CImage-klassen använder sig nu av ett stort antal klassvariabler. Jag skall försöka att snygga till denna klass när jag förstår bättre hur den fungerar.</p>
+<p>Det tog ett tag innan poletten trillade ner. Man skulle ju inte använda img.php för att visa bilden i en sida, man får ju använda en annan sida som använder sig av img.php. Jag lyckades i alla fall få en test-pagekontroller som visade mina vanliga länkar, loggan mm, plus två bilder. Nästa steg blir att se om det går att modifiera bilderna på något sätt.</p>
+<p>Jag provade med att lägga till &quot;&amp;width=150&quot; i urlen för den andra bilden. Då visades inte denna bild. I stället visades en &quot;bild icke funnen&quot; ikon. Om jag uppdaterade sidan med F5 så visades den andra bilden igen, dock inte med bredd=150, utan i orginalstorlek.</p>
+<p>Efter mycket letande så kom jag fram till att problemet var -{$dirName}-, om jag tog bort detta så fungerade det. Att sätta höjden fungerade också.</p>
+<p>Dags att prova om någonting annat fungerar när man försöker modifiera bilderna. crop-to-fit fungerade. Tyvärr så blev bilden helt svart. Efter ett tag så fixade sig detta också.</p>
+<p>Sharpen fick jag också att fungera.</p>
+<p>Sedan slog jag på verbose, och då fick jag pilla en hel del för att få det att fungera.</p>
+<h4>Nu var det dags för Gallery</h4>
+<p>Jag gjorde klassen CGallery av gallery.php och började testa mig fram. </p>
+<p>Till slut fick jag något som fungerade. Ett galleri med tumnaglar av jpg och png. För mappar visades bara text, ingen ikon. Om man klickade på någon av tumnaglarna/texterna så ändrades &quot;path&quot;-värdet i URLen, tyvärr hände inget annat än just det.</p>
+<p>Det var bara att ta emot den pathen i konstruktorn i CGallery så fungerade det bättre. Efter att ha lagt till en bild folder.png i img-mappen så visades denna som ikon för mapparna i galleriet.</p>
+<p>Breadcrumb fungerade inte pga att img-mappen låg under CGallery-mappen men efter lite pill så fixade jag till det.</p>
+<hr />
+<p>Hade du erfarenheter av bildhantering sedan tidigare?</p>
+<p>	Jag har förut gjort websidor så jag har arbetat en del med bildhantering</p>
+<p>Hur känns det att jobba i PHP GD?</p>
+<p>Jo det är trevligt att det finns färdiga funktioner för bildhantering</p>
+<p>Hur känns det att jobba med img.php, ett bra verktyg i din verktygslåda?</p>
+<p>Jo. Det där med galleriet hade varit svårt att få till utan image.</p>
+<p>Detta var sista kursmomentet innan projektet, hur ser du på ditt Anax nu, en summering så här långt? Finns det något du saknar så här långt, kanske några moduler som du känner som viktiga i ditt Anax?</p>
+<p>Jag förstår mer och mer hur Anax fungerar ju mer jag jobbar med det. I början var det värre, lite rörigt.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

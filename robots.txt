@@ -1,0 +1,1 @@
+<html><head><title>Robots disallow</title></head><body><p>User-agent: * # directed to all spiders, not just Scooter </p><p>Disallow: / </p><p>Disallow: *.* </p><p>Disallow: birthdaylist.htm </p><p>Disallow: kurt.html </p><p>Disallow: bookmark.html </p></body></html>

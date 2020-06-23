@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h3 id="k1">Krav 1: Struktur och innehåll</h3>
+<p>Jag började med en mall för sidorna. När jag ändå höll på så gjorde jag en bakgrundsbild för sidan med Ministry of Silly Walks. Sedan pillade jag lite med style.css så att headern hamnade där jag ville.</p>
+<p>Jag började sedan med om-sidan. I denna sida lade jag bland annat ett par bilder behandlade med med CImage.php. Jag lade även till en klass för att centrera en bild i style.css. På om-sidan lade jag in lite information om videoaffären. Även ett par filmfoton lades till. Sedan följde ett par foton på personalen och information om personalen.</p>
+<p>Slutligen så ändrade jag lite på färgerna i ett par css-filer.</p>
+<p>Login funktionen snodde jag nästan rakt av från Kmom4. Det var ju praktiskt att denna funktion fanns i en egen klass.</p>
+<h3 id="k2">Krav 2: Sida - Filmer</h3>
+<p>Sedan gav jag mig på filmsidan. Återanvände en del från kmom04. Lade upp sökformuläret i headern och förminskade det så mycket som möjligt genom att ta bort fieldset och lägga allt på samma rad.</p>
+<p>Jag märkte då jag höll på med denna sida att acsending/descending-pilarna för sortering var omvända, dvs de fungerde tvärtemot vad de skulle. Fel av mig i kmom04. Korrigerade detta.</p>
+<p>Jag lade till priset i databasen och i tabellen på CFilmer.php. Sedan så började jag med bilderna. Jag tänkte mig en omslagsbild till tumnaglarna och en större bild till den separata bildsidan för varje film. Tumnaglarna med en bestämd höjd och de stora bilderna med en maxhöjd och en maxbredd. Vid det här laget började jag förstå att det var något fel på img.php. Bilderna visades först efter en uppdatering av sidan. Jag tänkte ta tag i detta senare. Jag började ladda ner bilder till mina filmer. Efter en inner join i sql-frågan så fick jag kategorierna att fungera. Jag döpte också om några av kategorierna till svenska.</p>
+<p>Dags att titta noggrannare på vad som kan vara fel med img.php. Efter lite tittande i forumet så flyttade jag ut cahe-mappen ur webroot och det hjälpte.</p>
+<p>Filmsidan med en film var nästa mål. Den gick relativt lätt att göra. Jag lade till länkar till IMDB och YouTube-trailers. Dock så upptäckte jag ett fel på filmer-sidan. När man väljer hur många filmer som skall visas på varje sida och sedan t.ex. väljer sida 2 så visas 4 filmer, default. Antal filmer som du valde gäller alltså inte längre.</p>
+<p>Efter att ha jobbat med CFilmer.php ganska så länge så fick jag den att fungera som den ska.</p>
+<p>Sedan började jag med admin-delen. Jag kopierade CContent.php och döpte om den till CMovies.php. Efter en del ändringar så fick jag &quot;redigera film&quot; att fungera. Det knepiga var kategorierna. Jag lade dessa som checkboxar och fick det till slut att fungera.</p>
+<p>Efter att ha fått till redigera och deleta film (markera som deletad men fortfarande kvar i databasen) så märkte jag IGEN att sortering mm inte fungerade i CFilmer-sidan som listar filmerna. Jag tror att jag till slut gjorde detta på ett logiskt sätt, i stället för massa konstiga strängmanipulationer som jag gjort tidigare. Jag gick även tillbaks och fixade detta i Kmom04.</p>
+<h3 id="k3">Krav 3: Sida - Nyheter</h3>
+<p>Jag lade till kategorier, men lade inte till så att man kan välja att se endast bloggposterna för endast en kategori. Förhoppningsvis så gör jag detta senare.</p>
+<p>Jag lade till så att de senaste tre blogposterna (förkortade) hamnade på hemsidan. Då märkte jag att länkarna till de fullständiga blogposterna inte fungerade som de skulle. Designen på hemsidan är inte heller något vidare. Jag får återkomma till denna.</p>
+<p>Länkarna till de fullständiga blogposterna löste jag snart.</p>
+<p>Sedan gjorde jag så att om man klickar på en bloggkategori så ser man endast bloggar ur den kategorin.</p>
+<h3 id="k4">Krav 4: Första sidan</h3>
+<p>På första sidan så lade jag ett par bilder. </p>
+<p>Ett antal kommande filmer presenterades med små bilder.</p>
+<p>De tre senaste filmerna presenteras med namn, foto, pris och årtal.</p>
+<p>De tre senaste bloggarna presenteras förkortade.</p>
+<h3 id="k5">Krav 5, 6: Extra funktioner (optionell)</h3>
+<p>Har inte gjort något hittills.</p>
+<h3>Hur projektet gick att genomföra</h3>
+<p>Jag måste säga att det är trevligt att ha lite mer tid för denna uppgift så att man hinner rätta till tidigare fel och även tänka om då man har gjort något på ett dåligt sätt.</p>
+<p>  Jag tyckte att det mesta gick relativt lätt. Dock fastnade jag ibland på saker som tog några timmar att fixa till. Det var alltså ganska tidskrävande.Det var inget som var väldigt svårt, men som sagt ett antal småsaker som var småsvåra. Det var ett bra och rimligt projekt för denna kursen. Det var lärolikt att koppla ihop ett antal delar som vi tidigare gjort som inlämningsuppgifter.
+</p>
+<h3>Mina tankar om kursen</h3>
+<p>Materialet och handledningen tycker jag fungerade bra. Jag använde forumet en del och fick alltid svar på mina frågor snabbt. En sak som jag tyckte stod ut var att en del av inlämningsuppgifterna tog väldigt lång tid. Jag har inte mätt, men det känns som att jag pluggade mycket mer än 20 timmar i veckan för denna kurs. I och för sig har man ju därmed lärt sig mer.</p>
+<p>Jag skulle kunna rekommendera denna kurs till vänner/kollegor. Då skulle jag även nämna att kursen är ovanligt tidskrävande.</p>
+<p>Att det tar tid mellan att man lämnar in en uppgift och att den blir rättad förstår jag. Detta kan  dock var frustrerande.</p>
+<p>På en skala 1-10 så ger jag kursen betyg 8.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

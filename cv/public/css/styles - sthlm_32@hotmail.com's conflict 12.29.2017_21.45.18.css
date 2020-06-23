@@ -1,0 +1,41 @@
+h1{
+    font-family: 'Abril Fatface', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.stel-key{
+	background: #e6e6e6; 
+}
+
+.stel-key-header, .stel-val-header{
+	font-family: 'Abril Fatface', sans-serif;
+	background: #666666;
+	color: #ffffff;
+}
+
+.stel-val, .stel-val-2, .stel-val-3, .stel-val-header, .stel-progress{
+	margin-left: 5px;
+}
+
+.stel-val, .stel-progress{
+	background: #cccccc;
+}
+
+.stel-progress{
+	height: 20px;
+}
+
+.stel-val-2{
+	background: #b3b3b3;
+}
+
+.stel-val-3{
+	background: #999999;
+}
+
+

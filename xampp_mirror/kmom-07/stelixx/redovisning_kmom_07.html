@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1>Redovisning KMOM 05</h1>
+<p>Jag började med att läsa &quot;Lagra innehåll i databas för webbsidor och bloggposter&quot;</p>
+<p>Sedan så började jag med övningen &ldquo;Skapa en klass för innehåll i databasen, CContent&rdquo;. Därefter följde page.php. Jag fick problem med layouten vilket jag frågade om i forumet, <a href="http://dbwebb.se/forum/viewtopic.php?f=37&t=3155&p=25908&sid=d464e7991f23940a7503da4d3c92e989">Layoutproblem</a>.</p>
+<p>Sedan fick jag problem med markdown. Det hade även någon annan fått problem med, så jag hittade lösningen på forumet. </p>
+<p>Jag började sedan med blog.php. Efter att ha gjort en funktion för page i CContent, showPage(), och en funktion för blog, showBlog(), så såg jag att de var snarlika. Jag satte ihop dessa till en funktion, show(). Sedan så gjorde jag en ny lite mindre funktion, showBlog(), som visar en eller alla bloggar.</p>
+<p>Sedan gjorde jag en funktion i CContent.php som skapar tabellen content i databasen, createContentTable($tabl). Jag gjorde även en funktion som populerar tabellen, populateContentTable($tabl).</p>
+<p>Efter att ha pillat ett tag i kmom_05 och att par css-filer så lyckades jag äntligen att få min navbar att hamna där den ska vara, inte över hela browsern längst upp, åtminstone i kmom_05.php</p>
+<p>Sedan gjorde jag sidorna för att lägga till blogpost och sida. Fick problem med att ÅÄÖ inte lagrades som de skulle i databasen. Efter några timmar så kom jag på att detta orsakades av htmlentities(), så jag tog bort dessa på ett par ställen.</p>
+<p>Gjorde en ny funktion, isFilterValid($filt), för att kolla om angivna filter är giltiga.</p>
+<p>Sedan försökte jag få så att man kan skriva in publiceringsdatum vid sid/blogskapande, det sparades i databasen som 000-00-00... Det visade sig att den inbyggda funktionen strToTime inte fungerade som jag trott.</p>
+<p>Efter att ha gjort sidan update.php som ska ta emot en slug som argument så upptäckte jag att alla länkarna från &quot;editera&quot; på kmom_05.php-sidan ju är länkar till edit.php med ett id som argument :( Jag hoppas att jag kan fixa till detta lite snabbt.</p>
+<p>Fick ett problem med att &amp; blev &amp;amp; men fixade det ganska snabbt. Ett problem med att få dit null i filtret kom jag också på ganska snabbt. Det berodde på dubbelfnutt/enkelfnutt.</p>
+<p>Jag förstod inte riktigt hur man skulle kunna se de poster/sidor som var &quot;raderade&quot; eller inte var publicerade, så jag gjorde så att man kan se icke publicerade och &quot;deletade&quot; poster/sidor under &quot;Visa alla&quot;/hemsidan.</p>
+<p>Dumt nog så hade jag inte läst igenom uppgifterna helt och hållet. CPage och CBlog fick jag göra på slutet med hjälp av klipp och klistra. Koden för detta fanns innan i CContent.</p>
+<p>När jag sedan skulle göra login/logout-funktionaliteten så snodde jag denna från KMOM04, det gick förvånansvärt enkelt. När jag höll på med detta så såg jag att &quot;Title&quot; på sidan blog.php bestod av hela bloggen/bloggarna. Inte bra. Detta måste ha hänt när jag lade den funktionaliteten i CBlog.php. Detta fixades snabbt till så att titeln bra blev titeln.</p>
+<p>Nu kändes det som om allt var på plats. Jag provade lite fram och tillbaka. Hittade ett error  när man skulle spara editerad sida. Det visade sig att jag hade glömt enkelfnuttarna runt filtret i sqlfrågan.</p>
+<h3>Det blir en del moduler till ditt Anax nu, hur känns det?</h3>
+<p>Det blir en del att hålla reda på, men det är ju trevligt att man kan återanvända modulerna som jag gjorde med CLogin.</p>
+<h3>Berätta hur du tänkte när du löste uppgifterna, hur tänkte du när du strukturerade klasserna och sidkontrollerna?</h3>
+<p>Se lång text ovan. Jag hade ju kunna tänkt lite mer innan jag började koda. Nästa gång kommer jag garanterat att göra så. Man lär sig eftersom, den hårda vägen.</p>
+<h3>Börjar du få en känsla för hur du kan strukturera din kod i klasser och moduler, eller kanske inte?</h3>
+<p>Jag tycker att jag förstår mer och mer fördelarna med att ha koden i klasser och moduler. Det tar dock ett tag att lära om sig då man som jag tidigare har haft allt i en och samma sida (Klassisk ASP)</p>
+<h3>Snart har du grunderna klara i ditt Anax, grunderna som kan skapa många   webbplatser, är det något du saknar så här långt, kanske några moduler   som du känner som viktiga i ditt Anax?</h3>
+<p>Jag kan inte komma på några moduler som saknas. Det får man väl fixa eftersom? Däremot kan det nog behövas att snygga till ett antal av modulerna som jag har gjort så att de blir mer &quot;självgående&quot;.</p>
+<p>&nbsp;</p>
+</body>
+</html>

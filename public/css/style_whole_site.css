@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* Stylesheet for all site 2016-08-16*/
+/* Edited 2017-02-10 */
+
+/*
+*{
+	font-family:Verdana, Geneva, sans-serif;
+}
+*/
+
+/* Top navigation bar page(s) 2015 */
+.nav a{
+	font-size: 1.2em !important;
+}
+
+.dropdown-menu{
+	height: auto;
+    max-height: 85vh;
+    overflow-x: auto;
+}
+
+/* Message to user */
+.msg-to-user{
+	font-size: 2em;
+	margin-top: 20%;
+	padding-top: 30px;
+  	padding-bottom: 30px;
+  	-webkit-box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+	-moz-box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+	box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+}
+
+/* Message to user glyphicon */
+.msg-to-user-glyph{
+	font-size: 1.75em;	
+}

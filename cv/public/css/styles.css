@@ -1,0 +1,61 @@
+h1{
+    font-family: 'Abril Fatface', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.img-fluid, .stel-key-header, .stel-val-header{
+	-webkit-box-shadow: 6px 9px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 6px 9px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 6px 9px 10px 0px rgba(0,0,0,0.75);	
+}
+
+.center-text{
+	text-align: center;
+}
+
+.stel-key{
+	background: #e6e6e6;
+	font-weight: bold; 
+}
+
+.stel-key-header, .stel-val-header{
+	font-family: 'Abril Fatface', sans-serif;
+	background: #666666;
+	color: #ffffff;
+}
+
+.stel-val, .stel-val-2, .stel-val-3, .stel-val-header, .stel-progress{
+	margin-left: 10px;
+}
+
+/* H5 in .stel-key-header and .stel-val-header */
+.stel-key-header h5, .stel-val-header h5{
+	margin-top: 0.5rem;
+}
+
+.stel-val, .stel-progress{
+	background: #cccccc;
+}
+
+.stel-progress{
+	height: 20px;
+}
+
+.stel-val-2{
+	background: #b3b3b3;
+}
+
+.stel-val-3{
+	background: #999999;
+}
+
+@media (min-width: 1200px){}
+.container{
+    max-width: 80%;
+    padding-right: 1px;
+}
+
+
+
+

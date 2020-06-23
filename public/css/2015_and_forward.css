@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* 2015_and_forward.css */
+
+body{	
+	background-color:#CCC
+}
+
+a{
+	font-size:12px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.vcenter {
+	align-items: center;
+}
+
+#contStart{
+	width:90%;
+	margin-top: 60px;
+}
+
+#bigLeftText{
+	padding-top: 7%;
+}
+
+#bigImgCaption{
+	text-decoration:underline;
+	padding-left: 2%;
+	font-size: 2em;
+}
+
+#content{
+	z-index: -3:	
+	float:none;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* img in content */
+#content img {
+	z-index: -3;
+	-webkit-box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+	-moz-box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+	box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+}
+
+Here is the "plain English" of "#header.callout":
+
+Select the element which has an ID of header and also a class name of callout.
+
+.jumbotron {
+	display: none;
+	position: absolute;
+	top: 10%;
+  	left: 30%;
+  	border-style: solid;
+	border-width: 1px;
+	opacity: 0.9;
+	z-index: 10;
+	-webkit-box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+	-moz-box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+	box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+}
+
+.close-jumbo{
+	font-size: 1.75em;
+	float: right; 
+	cursor: pointer; 
+	cursor: hand; 
+}
+
+#imageHeadings, #year{
+	text-align:center;
+	background: white;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:12px;
+	margin-bottom: 2px;
+}
+
+#imageHeadings{
+	width: 80%;
+}
+
+#year{
+	width: 90%;
+}
+
+#imageText{
+	position: fixed;
+	margin: auto;
+	height: 1.6em;
+	background: #D7E9FB;
+	visibility:hidden;
+	text-align:center;
+}
+
+#year{
+	font-size: 2em;
+}
+
+.sidebar{
+	margin-top: 5px;
+	margin-left: 10px;
+	z-index: ; -1;
+	overflow: auto;
+	padding-top: 10px;
+	-webkit-box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+	-moz-box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+	box-shadow: 11px 11px 5px -1px rgba(0,0,0,0.76);
+}
+
+.sidebar.left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 166px;
+    background: #D7E9FB;
+	z-index: ; 0;
+}
+
+/* img in sidebar */
+.sidebar img { 
+    display: block;
+    margin: auto;
+		margin-left: 15px;
+		padding: 4px;
+		
+		/* These two go together for cross browser funcionality*/
+		cursor:pointer;
+		cursor: hand;
+}
+
+.sidebar p{
+	text-align:center;
+	margin:auto;
+}
+
+header {
+    padding: 8em 0;
+}
+
+header, footer {
+    color: white;
+    background: #448AFF;
+    background-image: url("background.png");
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.51);
+}
+
+h1.title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+pre {
+    background: #212121;
+    color: white;
+}
+
+header p {
+    font-size: 1.4em;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 3em;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.sidebars > .sidebar {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.64);
+    position: fixed;
+    color: white;
+    padding: 30px;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Arrows to last/next year in top nav */
+.stel-arrow-right, .stel-arrow-left{
+	color: #777;
+	padding-top: 0.9em;
+	text-decoration: none !important;
+	margin-bottom: 18px;
+}
+
+/* In top nav */
+.stel-arrow-left{
+	padding-right: 5px;
+	margin-right: 5px;
+}
+ 
+/* In top nav */
+.stel-arrow-right{
+	padding-left: 0.5em;
+	margin-left: 0;
+}
+
+/* last year and next year links in top nav */
+.stel-year{
+	color: #777;
+	text-decoration: none !important;
+}
+
+/* navbar li hover */
+.navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #CCCCFF;
+    color: #FFC0CB;
+}
+
+#yearWell{
+	text-align:center;
+}
+
+#stel-photo-btn{
+	width: 100%;
+	height: 70px;
+}
+
+#stel-first-img{
+	max-height: 90vh;
+}
+
+.stel-small-grey{
+color:#999999;
+}

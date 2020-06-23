@@ -1,0 +1,1 @@
+document.write('<font size="2">Copyright 2001 Robert Dominy.  All Rights Reserved</font>');

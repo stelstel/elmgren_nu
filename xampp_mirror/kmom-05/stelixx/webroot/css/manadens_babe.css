@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+.monthHeader {
+	text-align: center;
+	font-size:20px;
+	font-weight: bold;
+}
+
+.monthHeaderSmall {
+	text-align: center;
+	font-size:18px
+	font-weight: bold;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px;
+	background-color: #EEE;
+}
+
+table, th, td {
+	width: 700px;
+   	border: 1px solid black;
+} 
+
+.tdWeek {
+	text-align:center;
+	font-size:13px;
+	vertical-align:middle;
+}
+
+th {
+	background-color: #CCC;
+}
+
+td {
+	height: 59px;
+	vertical-align:top;
+	text-align:right;
+	font-family:Verdana, Geneva, sans-serif;
+	padding: 2px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+table.tableSmall {
+	width: 200px;
+	background-color: transparent;
+	border: 0;
+	padding: 1px;
+	border-collapse: collapse;
+	border-spacing: 10px;
+	font-size:16px;
+}
+
+table.tableSmall th{
+	border-left:none;
+	border-right:none;
+} 
+
+table.tableSmall td{
+	height: 25px;
+	padding: 0;
+	border: 0;
+	border-collapse: collapse;
+	text-align:center;
+	font-size:15px;
+	font-weight:normal;
+} 
+img {
+	display: block;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#middlePanel {
+	z-index:3; /* Highest z-index. The middle panel is most important*/
+	position:absolute;
+	left:31.5%;
+	right:31.5%;;
+	width:710px;
+	top:65;
+	height:70%;
+}
+
+#leftPanel {
+	z-index:2;
+	position:absolute;
+	left:15%;
+	width:250px;
+	top:50%;
+	text-align:right;
+}
+
+#rightPanel {
+	z-index:1;
+	position:absolute;
+	right:14%;
+	width:250px;
+	top:50%;
+}
+
+#footer{
+	position:relative;
+	bottom:0%;
+	left;0%;
+	width:50%;
+}

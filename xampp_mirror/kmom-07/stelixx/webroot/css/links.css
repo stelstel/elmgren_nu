@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+/**
+ * Layout for navigation bar / menu
+ */
+ #navbar {
+  margin-bottom: 2em;
+}
+
+/**
+ * Byline
+ */
+.byline {
+  border-top: 1px dashed #ccc;
+  font-style: italic;
+}
+
+/**
+ * Figure
+ */
+figure {
+
+}
+
+figcaption {
+
+}
+
+figure.right {
+  float: right;
+}
+
+
+
+
